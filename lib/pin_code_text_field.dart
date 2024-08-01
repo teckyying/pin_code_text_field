@@ -140,6 +140,8 @@ class PinCodeTextField extends StatefulWidget {
   final TextInputType keyboardType;
   final EdgeInsets pinBoxOuterPadding;
   final bool hasUnderline;
+  final double spacing;
+  final double runSpacing;
 
   const PinCodeTextField({
     Key key,
@@ -178,6 +180,8 @@ class PinCodeTextField extends StatefulWidget {
     this.pinBoxRadius = 0,
     this.hideDefaultKeyboard = false,
     this.hasUnderline = false,
+    this.spacing = 0,
+    this.runSpacing = 0,
   }) : super(key: key);
 
   @override
@@ -461,6 +465,8 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
     });
     return Wrap(
       direction: Axis.horizontal,
+      spacing: widget.spacing,
+      runSpacing: widget.runSpacing,
       alignment: widget.wrapAlignment,
       verticalDirection: VerticalDirection.down,
       textDirection: widget.textDirection,
