@@ -169,6 +169,7 @@ class _MyAppState extends State<MyApp> {
                     highlightColor: Colors.blue,
                     defaultBorderColor: Colors.black,
                     hasTextBorderColor: Colors.green,
+                    highlightPinBoxColor: Colors.orange,
                     maxLength: pinLength,
                     hasError: hasError,
                     maskCharacter: "😎",

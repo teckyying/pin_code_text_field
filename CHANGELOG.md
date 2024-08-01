@@ -1,3 +1,6 @@
+## [1.8.0]
+* Support Null Check
+
 ## [1.7.1]
 * Fixed underline color
 
